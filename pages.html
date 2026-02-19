@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Frames Example</title>
+</head>
+
+<!-- Divide page into 3 rows -->
+<frameset rows="120,80,*" border="1">
+
+    <!-- ===== First Row (2 Columns: Logo + Header) ===== -->
+    <frameset cols="30%,70%">
+
+        <frame src="data:text/html,
+        <html><body align='center'>
+        <h2>LOGO</h2>
+        <!-- Replace the src below with your actual logo image path -->
+        <img src='https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' width='80' height='80' alt='Logo'>
+        </body></html>">
+
+        <frame src="data:text/html,
+        <html><body align='center'>
+        <h1>My Website Header</h1>
+        </body></html>">
+    </frameset>
+
+    <!-- ===== Second Row (6 Columns: Navigation Links) ===== -->
+    <frameset cols="16%,16%,16%,16%,16%,20%">
+
+        <frame src="data:text/html,
+        <html><body align='center'>
+        <a href='data:text/html,<h2>Home Page</h2><p>Welcome to Home Page</p>' target='content'>Home</a>
+        </body></html>">
+
+        <frame src="data:text/html,
+        <html><body align='center'>
+        <a href='data:text/html,<h2>Login Page</h2><p>Enter login details</p>' target='content'>Login</a>
+        </body></html>">
+
+        <frame src="data:text/html,
+        <html><body align='center'>
+        <a href='data:text/html,<h2>Registration Page</h2><p>Fill registration form</p>' target='content'>Registration</a>
+        </body></html>">
+
+        <frame src="data:text/html,
+        <html><body align='center'>
+        <a href='data:text/html,<h2>Catalogue Page</h2><p>Product list here</p>' target='content'>Catalogue</a>
+        </body></html>">
+
+        <frame src="data:text/html,
+        <html><body align='center'>
+        <a href='data:text/html,<h2>Cart Page</h2><p>Your cart items</p>' target='content'>Cart</a>
+        </body></html>">
+
+        <frame src="data:text/html,
+        <html><body align='center'>
+        <a href='data:text/html,<h2>Contact Us</h2><p>Email: support@example.com</p>' target='content'>Contact Us</a>
+        </body></html>">
+
+    </frameset>
+
+    <!-- ===== Third Row (2 Columns: Services + Description) ===== -->
+    <frameset cols="30%,70%">
+
+        <!-- Services -->
+        <frame src="data:text/html,
+        <html><body>
+        <h3>Services</h3>
+        <ul>
+        <li><a href='data:text/html,<h2>Web Design</h2><p>Web design service details</p>' target='content'>Web Design</a></li>
+        <li><a href='data:text/html,<h2>Hosting</h2><p>Hosting service details</p>' target='content'>Hosting</a></li>
+        <li><a href='data:text/html,<h2>Support</h2><p>Support service details</p>' target='content'>Support</a></li>
+        </ul>
+        </body></html>">
+
+        <!-- Description Area -->
+        <frame name="content" src="data:text/html,
+        <html><body>
+        <h2>Welcome</h2>
+        <p>Content will be displayed here.</p>
+        </body></html>">
+
+    </frameset>
+
+</frameset>
+
+</html>
